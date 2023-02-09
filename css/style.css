@@ -1,0 +1,34 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.selection{
+    flex: 20%;
+    padding: 0 3px;
+}
+
+img{
+    width: 100%;
+    margin: 1px;
+}
+img:hover{
+    transform: scale(0.9888);
+    transition: ease-in-out;
+}
+
+@media(max-width:997px){
+    .selection{
+        flex: calc(100%/4);
+    }
+}
+@media(max-width:767px){
+    .selection{
+        flex: calc(100%/3);
+    }
+}
+@media(max-width:576px){
+    .selection{
+        flex: 100%;
+    }
+}
